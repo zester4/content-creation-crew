@@ -1,0 +1,49 @@
+trend_research_task:
+  description: >
+    Conduct comprehensive research on the latest trends related to {content_type} 
+    for {target_audience}. Identify key topics, emerging themes, and 
+    audience interests that will inform content creation.
+  expected_output: >
+    A detailed trend report with:
+    - Top 5-7 trending topics
+    - Audience engagement insights
+    - Potential content angles
+    - Keyword and topic clusters
+  agent: trend_researcher
+
+content_strategy_task:
+  description: >
+    Develop a strategic content plan based on the trend research, 
+    considering {tone}, {style}, and {target_audience}. 
+    Create a comprehensive content blueprint.
+  expected_output: >
+    A strategic content plan including:
+    - Detailed content outline
+    - Recommended content structure
+    - Tone and style guidelines
+    - Potential unique selling points
+  agent: content_strategist
+
+content_creation_task:
+  description: >
+    Write a comprehensive piece of content based on the strategic plan. 
+    Ensure the content is engaging, informative, and perfectly tailored 
+    to {target_audience} with {tone} and {style}.
+  expected_output: >
+    A fully written content piece in the specified format 
+    (blog post, article, script, etc.) ready for final review
+  agent: content_writer
+  output_file: output/content_draft.md
+
+seo_optimization_task:
+  description: >
+    Optimize the created content for search engines and audience engagement. 
+    Enhance readability, keyword placement, and overall content performance.
+  expected_output: >
+    A fully optimized content piece with:
+    - SEO-friendly headings
+    - Keyword optimization
+    - Suggested internal and external links
+    - Performance recommendations
+  agent: seo_optimizer
+  output_file: output/optimized_content.md
